@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>GHost 0.0.0</title>
+    <meta charset="utf-8"/>
+    <link href="defaul.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+    .boton_personalizado{
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #1883ba;
+      border-radius: 6px;
+      border: 2px solid #0016b0;
+    }
+    .boton_personalizado:hover{
+      color: #1883ba;
+      background-color: #ffffff;
+    }
+
+    .button {
+  background-color: #8087f3;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+  height:100%;
+  display:inline-table;
+  font-family: system-ui;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #07e4f8;
+  color: White;
+}
+
+.button1 {
+  background-color: #f1ed00;  
+  border-radius: 5px;
+  color: rgb(10, 10, 10);
+  padding: .5em;
+  text-decoration: none;
+  height:100%;
+  display:inline-table;
+  font-family: system-ui;
+}
+
+.button1:focus,
+.button1:hover {
+  background-color: #07e4f8;
+  color: White;
+}
+
+body {
+    background-image: url("img/ps4.jpg");
+    width: 100%;
+    height: 99vh;
+   background-size: cover;
+   background-position: center;
+}
+
+h1 {
+  background: #ccc;
+  background: radial-gradient(#22d4cb, rgb(182, 184, 82));
+  font-family: system-ui;
+  font-size: 4rem;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  background: #ccc;
+  background: radial-gradient(#050505, rgb(79, 56, 211));
+  font-family: system-ui;
+  font-size: 3rem;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h3 {
+  background: #ccc;
+  background: radial-gradient(#ffe600, rgb(79, 56, 211));
+  font-family: system-ui;
+  font-size: 2rem;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.box
+{
+	padding: 3em 2em 2em 2em;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 8px;
+		text-align: center;
+}
+
+
+	#extra
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+	}
+	
+	#extra .title
+	{
+		text-align: center;
+	}
+	
+	#extra .button
+	{
+		margin-top: 5em;
+	}
+	
+	#extra .fa
+	{
+		display: block;
+		margin-bottom: 0.5em;
+		text-align: center;
+		font-size: 3em;
+	}
+
+
+.btn-neon{
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: #fff;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden;
+transition: 0.2s;
+}
+.btn-neon:hover{
+ background: #0932e9;
+ box-shadow: 0 0 10px #d113bb, 0 0 40px #d113bb, 0 0 80px #d113bb;
+ transition-delay: 1s;
+ }
+.btn-neon span{
+ position: absolute;
+ display: block;
+        }
+ #span1{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent,#d113bb);
+ }
+ .btn-neon:hover #span1{
+ left: 100%;
+ transition: 1s;
+ }
+ #span3{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg, transparent,#d1137f);
+ }
+ .btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  }
+  #span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#d11330);
+  }
+  .btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  }
+  #span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+  }
+  </style>
+  <script>
+    window.onload = function(e){if(localStorage.Fail==null){localStorage.Fail=0;localStorage.Success=0;}
+    document.getElementById("success").innerHTML="Success: "+localStorage.Success;
+    document.getElementById("fail").innerHTML="Fail: "+localStorage.Fail;}
+    window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!"};
+    window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed"};
+    window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
+  </script>
+
+<script>setTimeout(function(){document.getElementById("log").innerHTML="fake_vtable: "+fake_vtable.toString()+"  saveall_addr: "+saveall_addr.toString()+"  fake_vt_ptr_bak: "+fake_vt_ptr_bak.toString()+"  pivot_addr: "+pivot_addr.toString()+"  fake_vt_ptr: "+fake_vt_ptr.toString();},500);</script>
+
+  <body onload="go()" class="bg">
+  <div id="log" style="display:none;"></div>
+<span id="success" style="background-color:limegreen;color:black;" class="titlehead"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="fail" style="background-color:firebrick;color:black;" class="titlehead"></span>
+
+    <center><H1>GAHost 0.0.0<br /></H1></center>
+    <center><H3>Firware 7.50/7.51/7.55<br /></H3></center>
+
+    <table align="center" style="width:600px;margin-top:30px;">
+        <tbody><tr>
+        <td align="center" colspan="2">
+        <a href="https://gh0x0000st.github.io/jb-bGhost-/" class="button" style="width:29%">PS4 JAILBREAK</a>
+        <a class="button1" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN  </a>
+        </td>
+        </tr>
+        </tbody></table>
+</body>
+
+<footer>
+
+    <hr>
+    <table align="center" style="width:600px;margin-top:30px;">
+        <tbody><tr>
+        <td align="center" colspan="2">
+        <a href="index672.html" class="button" style="width:29%">app2USB</a>
+        <a href="index702.html" class="button" style="width:29%">BinLoader</a>
+        </td>
+        </tr>
+        </tbody></table>
+        <table align="center" style="width:600px;margin-top:30px;">
+            <tbody><tr>
+            <td align="center" colspan="2">
+            <a href="index672.html" class="button" style="width:29%">Disable Updates</a>
+            <a href="index702.html" class="button" style="width:29%">Enable Updates</a>
+            <a class="button" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
+            </td>
+            </tr>
+            </tbody></table>
+            <table align="center" style="width:600px;margin-top:30px;">
+           <tbody><tr>
+          <td align="center" colspan="2">
+          <a href="index672.html" class="button" style="width:29%">Dumper</a>
+          <a href="index702.html" class="button" style="width:29%">Exit IDU</a>
+          <a href="index702.html" class="button" style="width:29%">Enable Browser</a>
+          </td>
+          </tr>
+          </tbody></table>
+          <table align="center" style="width:600px;margin-top:30px;">
+          <tbody><tr>
+          <td align="center" colspan="2">
+          <a href="index672.html" class="button" style="width:29%">Backup</a>
+          <a href="index702.html" class="button" style="width:29%">Restore</a>
+          <a href="index702.html" class="button" style="width:29%">History Blocker</a>
+          </td>
+          </tr>
+          </tbody></table>
+          <table align="center" style="width:600px;margin-top:30px;">
+          <tbody><tr>
+          <td align="center" colspan="2">
+          <a href="index672.html" class="button" style="width:29%">Rif Renamer</a>
+          <a href="index702.html" class="button" style="width:29%">To-Dex</a>
+          <a href="index702.html" class="button" style="width:29%"> Disable ASLR</a>
+          </td>
+          </tr>
+          </tbody></table>
+          <table align="center" style="width:600px;margin-top:30px;">
+          <tbody><tr>
+          <td align="center" colspan="2">
+          <a href="index672.html" class="button" style="width:29%">Kernel Dumper</a>
+          <a href="index702.html" class="button" style="width:29%">Kernel Clock</a>
+          <a href="index702.html" class="button" style="width:29%">Fan Control</a>
+          </td>
+          </tr>
+         </tbody></table>
+      <scrit>
+      <script>
+      function mainpayload1(){
+      document.getElementById("msgs").innerHTML = "GoldHEN for All Firmwares 7.5x";
+      }
+      function ftp(){
+document.getElementById("msgs").innerHTML = "Access this console Through FTP (Be careful what you do)";
+}
+
+      function load_goldhen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=goldhen_755.js';
+        link.click();
+}
+function load_ftp(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=ftp.js';
+        link.click();
+}
+</script>                 
+    </hr>
+
+</footer>
+
+</html>
